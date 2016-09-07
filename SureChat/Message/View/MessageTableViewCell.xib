@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="watch-tips-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="uPK-Y4-gUn">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="uPK-Y4-gUn" secondAttribute="height" id="qSz-qj-Ist"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dop-Y9-dk0">
+                        <rect key="frame" x="50" y="5" width="25" height="25"/>
+                        <color key="backgroundColor" red="1" green="0.19700545999699892" blue="0.22306354871099798" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="MCN-Pv-pMM"/>
+                            <constraint firstAttribute="height" constant="25" id="sUe-LE-PO3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卖报的小画家" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFu-JH-I3y">
+                        <rect key="frame" x="84" y="15" width="286" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="中午吃啥啊" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmb-JQ-QaD">
+                        <rect key="frame" x="84" y="41" width="251" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="locationSharing_icon_Member.png" translatesAutoresizingMaskIntoConstraints="NO" id="DY2-3K-3nY">
+                        <rect key="frame" x="345" y="55" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Pet-NK-HfA"/>
+                            <constraint firstAttribute="height" constant="20" id="ZYP-nH-Ncg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DY2-3K-3nY" secondAttribute="bottom" constant="5" id="7ei-jG-Bzj"/>
+                    <constraint firstAttribute="trailing" secondItem="dmb-JQ-QaD" secondAttribute="trailing" constant="40" id="9Vr-0N-RLv"/>
+                    <constraint firstItem="hFu-JH-I3y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="C3c-bg-ive"/>
+                    <constraint firstAttribute="trailing" secondItem="hFu-JH-I3y" secondAttribute="trailing" constant="5" id="Cxi-D4-TKp"/>
+                    <constraint firstItem="hFu-JH-I3y" firstAttribute="leading" secondItem="uPK-Y4-gUn" secondAttribute="trailing" constant="15" id="Div-RP-Jc0"/>
+                    <constraint firstItem="dmb-JQ-QaD" firstAttribute="leading" secondItem="uPK-Y4-gUn" secondAttribute="trailing" constant="15" id="F2x-nw-tUB"/>
+                    <constraint firstAttribute="bottom" secondItem="uPK-Y4-gUn" secondAttribute="bottom" constant="10" id="FPX-TW-4R0"/>
+                    <constraint firstItem="dmb-JQ-QaD" firstAttribute="top" secondItem="hFu-JH-I3y" secondAttribute="bottom" constant="5" id="Irv-jM-Sh4"/>
+                    <constraint firstItem="dop-Y9-dk0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="JIT-DL-fiS"/>
+                    <constraint firstAttribute="trailing" secondItem="DY2-3K-3nY" secondAttribute="trailing" constant="10" id="Mj5-cd-GEE"/>
+                    <constraint firstItem="uPK-Y4-gUn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="W1P-5p-6RB"/>
+                    <constraint firstItem="uPK-Y4-gUn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cHV-es-gIZ"/>
+                    <constraint firstItem="dop-Y9-dk0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="eq8-NE-4Em"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="uPK-Y4-gUn" id="AtX-n2-g4D"/>
+                <outlet property="isGroupImageView" destination="DY2-3K-3nY" id="YiX-OX-pld"/>
+                <outlet property="lastMessageLabel" destination="dmb-JQ-QaD" id="fBj-OM-Znh"/>
+                <outlet property="messageNumLabel" destination="dop-Y9-dk0" id="fh4-cn-ofh"/>
+                <outlet property="nameLabel" destination="hFu-JH-I3y" id="N9d-wc-02y"/>
+            </connections>
+            <point key="canvasLocation" x="304.5" y="284"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="locationSharing_icon_Member.png" width="80" height="80"/>
+        <image name="watch-tips-avatar.png" width="180" height="180"/>
+    </resources>
+</document>

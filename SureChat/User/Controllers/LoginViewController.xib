@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="passwordTextField" destination="gXo-eh-Sbk" id="SSb-fc-gJA"/>
+                <outlet property="usernameTextField" destination="f3Q-62-cAd" id="FgE-EF-vvj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入帐号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3Q-62-cAd">
+                    <rect key="frame" x="50" y="100" width="275" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8Lt-8j-Mtd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXo-eh-Sbk">
+                    <rect key="frame" x="50" y="150" width="275" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MGh-0U-zMM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-HY-Qm0">
+                    <rect key="frame" x="80" y="210" width="40" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="qlI-TG-GkT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYs-re-o9K">
+                    <rect key="frame" x="255" y="210" width="40" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginClick:" destination="-1" eventType="touchUpInside" id="wdM-ff-nY4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.63430130141435548" blue="0.5145799074171078" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="uYs-re-o9K" firstAttribute="top" secondItem="gXo-eh-Sbk" secondAttribute="bottom" constant="20" id="1A1-fb-qPz"/>
+                <constraint firstItem="f3Q-62-cAd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="3JO-Mx-Rak"/>
+                <constraint firstAttribute="trailing" secondItem="uYs-re-o9K" secondAttribute="trailing" constant="80" id="9nQ-Eh-po8"/>
+                <constraint firstItem="gXo-eh-Sbk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DmO-EY-bjn"/>
+                <constraint firstItem="gXo-eh-Sbk" firstAttribute="top" secondItem="f3Q-62-cAd" secondAttribute="bottom" constant="10" id="FEU-WE-S7g"/>
+                <constraint firstItem="f3Q-62-cAd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NKC-CS-dx2"/>
+                <constraint firstItem="f3Q-62-cAd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="PX9-lL-YwW"/>
+                <constraint firstItem="KXa-HY-Qm0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="TXp-vf-tpR"/>
+                <constraint firstItem="KXa-HY-Qm0" firstAttribute="top" secondItem="gXo-eh-Sbk" secondAttribute="bottom" constant="20" id="dwC-af-y2x"/>
+                <constraint firstItem="gXo-eh-Sbk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="xBD-R0-Ahn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="ruE-dY-boh" appends="YES" id="Xxs-7L-E93"/>
+            </connections>
+            <point key="canvasLocation" x="246.5" y="241.5"/>
+        </view>
+        <tapGestureRecognizer id="ruE-dY-boh">
+            <connections>
+                <action selector="tapClick:" destination="-1" id="lcG-ET-4n4"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

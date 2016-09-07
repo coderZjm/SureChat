@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		727032703069635DF021732D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EEB01348569ADF1B7629B4 /* libPods.a */; };
+		8819CF911CFBD89C00326BA5 /* lauch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8819CF901CFBD89C00326BA5 /* lauch.png */; };
+		883285D61CDF75EE0064C914 /* fts_groupnumber_icon~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 883285D51CDF75EE0064C914 /* fts_groupnumber_icon~iphone.png */; };
+		883285E11CDF76A20064C914 /* c2cReceiverMsgNodeBG~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 883285D91CDF76A20064C914 /* c2cReceiverMsgNodeBG~iphone.png */; };
+		883285E51CDF76A20064C914 /* c2cSenderMsgNodeBG~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 883285DD1CDF76A20064C914 /* c2cSenderMsgNodeBG~iphone.png */; };
+		883285EA1CDF7A4B0064C914 /* AlbumShareHL~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 883285E91CDF7A4B0064C914 /* AlbumShareHL~iphone.png */; };
+		883285EC1CDF7A7A0064C914 /* AlbumShare~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 883285EB1CDF7A7A0064C914 /* AlbumShare~iphone.png */; };
+		883285F01CDF7B070064C914 /* GroupDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883285EE1CDF7B070064C914 /* GroupDetailTableViewController.m */; };
+		883285F11CDF7B070064C914 /* GroupDetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883285EF1CDF7B070064C914 /* GroupDetailTableViewController.xib */; };
+		883285F41CDF7F010064C914 /* GroupDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 883285F31CDF7F010064C914 /* GroupDetailModel.m */; };
+		883285F81CE025AB0064C914 /* AddGroupMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883285F61CE025AB0064C914 /* AddGroupMemberViewController.m */; };
+		883285F91CE025AB0064C914 /* AddGroupMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883285F71CE025AB0064C914 /* AddGroupMemberViewController.xib */; };
+		887D9A851CDF408B00F37C18 /* locationSharing_icon_Member~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 887D9A841CDF408B00F37C18 /* locationSharing_icon_Member~iphone.png */; };
+		88AEA9611CDA13AF00094C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AEA9601CDA13AF00094C66 /* main.m */; };
+		88AEA96A1CDA13AF00094C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AEA9681CDA13AF00094C66 /* Main.storyboard */; };
+		88AEA96C1CDA13AF00094C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AEA96B1CDA13AF00094C66 /* Assets.xcassets */; };
+		88AEA96F1CDA13AF00094C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AEA96D1CDA13AF00094C66 /* LaunchScreen.storyboard */; };
+		88B026241CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0260C1CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone.png */; };
+		88B026251CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0260D1CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone@3x.png */; };
+		88B026271CDDF0CB003DEB20 /* Fav_Search_Voice~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0260F1CDDF0CB003DEB20 /* Fav_Search_Voice~iphone.png */; };
+		88B026281CDDF0CB003DEB20 /* global_btn_bottom_friend_press~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026101CDDF0CB003DEB20 /* global_btn_bottom_friend_press~iphone.png */; };
+		88B026291CDDF0CB003DEB20 /* global_btn_bottom_friend~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026111CDDF0CB003DEB20 /* global_btn_bottom_friend~iphone.png */; };
+		88B0262A1CDDF0CB003DEB20 /* global_btn_bottom_message_press~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026121CDDF0CB003DEB20 /* global_btn_bottom_message_press~iphone.png */; };
+		88B0262B1CDDF0CB003DEB20 /* global_btn_bottom_message~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026131CDDF0CB003DEB20 /* global_btn_bottom_message~iphone.png */; };
+		88B0262C1CDDF0CB003DEB20 /* global_btn_bottom_my_press~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026141CDDF0CB003DEB20 /* global_btn_bottom_my_press~iphone.png */; };
+		88B0262D1CDDF0CB003DEB20 /* global_btn_bottom_my~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026151CDDF0CB003DEB20 /* global_btn_bottom_my~iphone.png */; };
+		88B0262E1CDDF0CB003DEB20 /* global_btn_bottom_play_press~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026161CDDF0CB003DEB20 /* global_btn_bottom_play_press~iphone.png */; };
+		88B0262F1CDDF0CB003DEB20 /* global_btn_bottom_play~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026171CDDF0CB003DEB20 /* global_btn_bottom_play~iphone.png */; };
+		88B026301CDDF0CB003DEB20 /* global_btn_bottom_story_press~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026181CDDF0CB003DEB20 /* global_btn_bottom_story_press~iphone.png */; };
+		88B026311CDDF0CB003DEB20 /* global_btn_bottom_story~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026191CDDF0CB003DEB20 /* global_btn_bottom_story~iphone.png */; };
+		88B026321CDDF0CB003DEB20 /* lacunimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0261A1CDDF0CB003DEB20 /* lacunimage.png */; };
+		88B026341CDDF0CB003DEB20 /* plugins_FriendNotify~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0261C1CDDF0CB003DEB20 /* plugins_FriendNotify~iphone.png */; };
+		88B026351CDDF0CB003DEB20 /* plugins_FriendNotify~iphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0261D1CDDF0CB003DEB20 /* plugins_FriendNotify~iphone@3x.png */; };
+		88B026361CDDF0CB003DEB20 /* Private letter_List_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0261E1CDDF0CB003DEB20 /* Private letter_List_1.png */; };
+		88B026371CDDF0CB003DEB20 /* Private letter_List_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B0261F1CDDF0CB003DEB20 /* Private letter_List_1@2x.png */; };
+		88B026381CDDF0CB003DEB20 /* Private letter_List_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026201CDDF0CB003DEB20 /* Private letter_List_2.png */; };
+		88B026391CDDF0CB003DEB20 /* Private letter_List_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026211CDDF0CB003DEB20 /* Private letter_List_2@2x.png */; };
+		88B0263A1CDDF0CB003DEB20 /* watch-tips-avatar2~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026221CDDF0CB003DEB20 /* watch-tips-avatar2~iphone.png */; };
+		88B0263B1CDDF0CB003DEB20 /* watch-tips-avatar~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B026231CDDF0CB003DEB20 /* watch-tips-avatar~iphone.png */; };
+		88B026411CDDF11D003DEB20 /* FactoryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0263E1CDDF11D003DEB20 /* FactoryClass.m */; };
+		88B026421CDDF11D003DEB20 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026401CDDF11D003DEB20 /* UIImage+GIF.m */; };
+		88B0264A1CDDF125003DEB20 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026461CDDF125003DEB20 /* SettingTableViewController.m */; };
+		88B0264B1CDDF125003DEB20 /* SettingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026471CDDF125003DEB20 /* SettingTableViewController.xib */; };
+		88B0265F1CDDF12B003DEB20 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0264F1CDDF12B003DEB20 /* AddFriendViewController.m */; };
+		88B026601CDDF12B003DEB20 /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026501CDDF12B003DEB20 /* AddFriendViewController.xib */; };
+		88B026611CDDF12B003DEB20 /* AddressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026521CDDF12B003DEB20 /* AddressTableViewController.m */; };
+		88B026621CDDF12B003DEB20 /* AddressTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026531CDDF12B003DEB20 /* AddressTableViewController.xib */; };
+		88B026631CDDF12B003DEB20 /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026551CDDF12B003DEB20 /* CreateGroupViewController.m */; };
+		88B026641CDDF12B003DEB20 /* CreateGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026561CDDF12B003DEB20 /* CreateGroupViewController.xib */; };
+		88B026651CDDF12B003DEB20 /* NewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026581CDDF12B003DEB20 /* NewFriendViewController.m */; };
+		88B026661CDDF12B003DEB20 /* NewFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026591CDDF12B003DEB20 /* NewFriendViewController.xib */; };
+		88B026671CDDF12B003DEB20 /* AddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0265D1CDDF12B003DEB20 /* AddressTableViewCell.m */; };
+		88B026681CDDF12B003DEB20 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B0265E1CDDF12B003DEB20 /* AddressTableViewCell.xib */; };
+		88B0267C1CDDF131003DEB20 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0266C1CDDF131003DEB20 /* ChatViewController.m */; };
+		88B0267D1CDDF131003DEB20 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B0266D1CDDF131003DEB20 /* ChatViewController.xib */; };
+		88B0267E1CDDF131003DEB20 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0266F1CDDF131003DEB20 /* MessageTableViewController.m */; };
+		88B0267F1CDDF131003DEB20 /* MessageTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026701CDDF131003DEB20 /* MessageTableViewController.xib */; };
+		88B026801CDDF131003DEB20 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026731CDDF131003DEB20 /* ChatModel.m */; };
+		88B026811CDDF131003DEB20 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026751CDDF131003DEB20 /* MessageModel.m */; };
+		88B026821CDDF131003DEB20 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026781CDDF131003DEB20 /* ChatTableViewCell.m */; };
+		88B026831CDDF131003DEB20 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B0267A1CDDF131003DEB20 /* MessageTableViewCell.m */; };
+		88B026841CDDF131003DEB20 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B0267B1CDDF131003DEB20 /* MessageTableViewCell.xib */; };
+		88B0268C1CDDF1B7003DEB20 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026881CDDF1B7003DEB20 /* LoginViewController.m */; };
+		88B0268D1CDDF1B7003DEB20 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B026891CDDF1B7003DEB20 /* LoginViewController.xib */; };
+		88B026931CDDF1C6003DEB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026901CDDF1C6003DEB20 /* AppDelegate.m */; };
+		88B026941CDDF1C6003DEB20 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B026921CDDF1C6003DEB20 /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86EEB01348569ADF1B7629B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8819CF901CFBD89C00326BA5 /* lauch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lauch.png; sourceTree = "<group>"; };
+		883285D51CDF75EE0064C914 /* fts_groupnumber_icon~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fts_groupnumber_icon~iphone.png"; sourceTree = "<group>"; };
+		883285D91CDF76A20064C914 /* c2cReceiverMsgNodeBG~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c2cReceiverMsgNodeBG~iphone.png"; sourceTree = "<group>"; };
+		883285DD1CDF76A20064C914 /* c2cSenderMsgNodeBG~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c2cSenderMsgNodeBG~iphone.png"; sourceTree = "<group>"; };
+		883285E91CDF7A4B0064C914 /* AlbumShareHL~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumShareHL~iphone.png"; sourceTree = "<group>"; };
+		883285EB1CDF7A7A0064C914 /* AlbumShare~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumShare~iphone.png"; sourceTree = "<group>"; };
+		883285ED1CDF7B070064C914 /* GroupDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupDetailTableViewController.h; sourceTree = "<group>"; };
+		883285EE1CDF7B070064C914 /* GroupDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupDetailTableViewController.m; sourceTree = "<group>"; };
+		883285EF1CDF7B070064C914 /* GroupDetailTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupDetailTableViewController.xib; sourceTree = "<group>"; };
+		883285F21CDF7F010064C914 /* GroupDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupDetailModel.h; sourceTree = "<group>"; };
+		883285F31CDF7F010064C914 /* GroupDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupDetailModel.m; sourceTree = "<group>"; };
+		883285F51CE025AB0064C914 /* AddGroupMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGroupMemberViewController.h; sourceTree = "<group>"; };
+		883285F61CE025AB0064C914 /* AddGroupMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGroupMemberViewController.m; sourceTree = "<group>"; };
+		883285F71CE025AB0064C914 /* AddGroupMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGroupMemberViewController.xib; sourceTree = "<group>"; };
+		887D9A841CDF408B00F37C18 /* locationSharing_icon_Member~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationSharing_icon_Member~iphone.png"; sourceTree = "<group>"; };
+		88AEA95C1CDA13AF00094C66 /* SureChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SureChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AEA9601CDA13AF00094C66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88AEA9691CDA13AF00094C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88AEA96B1CDA13AF00094C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88AEA96E1CDA13AF00094C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88AEA9701CDA13AF00094C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AEA97C1CDA141300094C66 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		88B0260C1CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_friend_icon_addgroup~iphone.png"; sourceTree = "<group>"; };
+		88B0260D1CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_friend_icon_addgroup~iphone@3x.png"; sourceTree = "<group>"; };
+		88B0260F1CDDF0CB003DEB20 /* Fav_Search_Voice~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_Search_Voice~iphone.png"; sourceTree = "<group>"; };
+		88B026101CDDF0CB003DEB20 /* global_btn_bottom_friend_press~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_friend_press~iphone.png"; sourceTree = "<group>"; };
+		88B026111CDDF0CB003DEB20 /* global_btn_bottom_friend~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_friend~iphone.png"; sourceTree = "<group>"; };
+		88B026121CDDF0CB003DEB20 /* global_btn_bottom_message_press~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_message_press~iphone.png"; sourceTree = "<group>"; };
+		88B026131CDDF0CB003DEB20 /* global_btn_bottom_message~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_message~iphone.png"; sourceTree = "<group>"; };
+		88B026141CDDF0CB003DEB20 /* global_btn_bottom_my_press~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_my_press~iphone.png"; sourceTree = "<group>"; };
+		88B026151CDDF0CB003DEB20 /* global_btn_bottom_my~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_my~iphone.png"; sourceTree = "<group>"; };
+		88B026161CDDF0CB003DEB20 /* global_btn_bottom_play_press~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_play_press~iphone.png"; sourceTree = "<group>"; };
+		88B026171CDDF0CB003DEB20 /* global_btn_bottom_play~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_play~iphone.png"; sourceTree = "<group>"; };
+		88B026181CDDF0CB003DEB20 /* global_btn_bottom_story_press~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_story_press~iphone.png"; sourceTree = "<group>"; };
+		88B026191CDDF0CB003DEB20 /* global_btn_bottom_story~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "global_btn_bottom_story~iphone.png"; sourceTree = "<group>"; };
+		88B0261A1CDDF0CB003DEB20 /* lacunimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lacunimage.png; sourceTree = "<group>"; };
+		88B0261C1CDDF0CB003DEB20 /* plugins_FriendNotify~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plugins_FriendNotify~iphone.png"; sourceTree = "<group>"; };
+		88B0261D1CDDF0CB003DEB20 /* plugins_FriendNotify~iphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plugins_FriendNotify~iphone@3x.png"; sourceTree = "<group>"; };
+		88B0261E1CDDF0CB003DEB20 /* Private letter_List_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Private letter_List_1.png"; sourceTree = "<group>"; };
+		88B0261F1CDDF0CB003DEB20 /* Private letter_List_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Private letter_List_1@2x.png"; sourceTree = "<group>"; };
+		88B026201CDDF0CB003DEB20 /* Private letter_List_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Private letter_List_2.png"; sourceTree = "<group>"; };
+		88B026211CDDF0CB003DEB20 /* Private letter_List_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Private letter_List_2@2x.png"; sourceTree = "<group>"; };
+		88B026221CDDF0CB003DEB20 /* watch-tips-avatar2~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-tips-avatar2~iphone.png"; sourceTree = "<group>"; };
+		88B026231CDDF0CB003DEB20 /* watch-tips-avatar~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-tips-avatar~iphone.png"; sourceTree = "<group>"; };
+		88B0263D1CDDF11D003DEB20 /* FactoryClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryClass.h; sourceTree = "<group>"; };
+		88B0263E1CDDF11D003DEB20 /* FactoryClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryClass.m; sourceTree = "<group>"; };
+		88B0263F1CDDF11D003DEB20 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		88B026401CDDF11D003DEB20 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		88B026451CDDF125003DEB20 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		88B026461CDDF125003DEB20 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		88B026471CDDF125003DEB20 /* SettingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewController.xib; sourceTree = "<group>"; };
+		88B0264E1CDDF12B003DEB20 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		88B0264F1CDDF12B003DEB20 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		88B026501CDDF12B003DEB20 /* AddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
+		88B026511CDDF12B003DEB20 /* AddressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewController.h; sourceTree = "<group>"; };
+		88B026521CDDF12B003DEB20 /* AddressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewController.m; sourceTree = "<group>"; };
+		88B026531CDDF12B003DEB20 /* AddressTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewController.xib; sourceTree = "<group>"; };
+		88B026541CDDF12B003DEB20 /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
+		88B026551CDDF12B003DEB20 /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
+		88B026561CDDF12B003DEB20 /* CreateGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateGroupViewController.xib; sourceTree = "<group>"; };
+		88B026571CDDF12B003DEB20 /* NewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendViewController.h; sourceTree = "<group>"; };
+		88B026581CDDF12B003DEB20 /* NewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendViewController.m; sourceTree = "<group>"; };
+		88B026591CDDF12B003DEB20 /* NewFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewFriendViewController.xib; sourceTree = "<group>"; };
+		88B0265C1CDDF12B003DEB20 /* AddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewCell.h; sourceTree = "<group>"; };
+		88B0265D1CDDF12B003DEB20 /* AddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewCell.m; sourceTree = "<group>"; };
+		88B0265E1CDDF12B003DEB20 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		88B0266B1CDDF131003DEB20 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		88B0266C1CDDF131003DEB20 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		88B0266D1CDDF131003DEB20 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		88B0266E1CDDF131003DEB20 /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
+		88B0266F1CDDF131003DEB20 /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
+		88B026701CDDF131003DEB20 /* MessageTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewController.xib; sourceTree = "<group>"; };
+		88B026721CDDF131003DEB20 /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		88B026731CDDF131003DEB20 /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		88B026741CDDF131003DEB20 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		88B026751CDDF131003DEB20 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		88B026771CDDF131003DEB20 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		88B026781CDDF131003DEB20 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		88B026791CDDF131003DEB20 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		88B0267A1CDDF131003DEB20 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		88B0267B1CDDF131003DEB20 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		88B026871CDDF1B7003DEB20 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		88B026881CDDF1B7003DEB20 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		88B026891CDDF1B7003DEB20 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		88B0268F1CDDF1C6003DEB20 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88B026901CDDF1C6003DEB20 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88B026911CDDF1C6003DEB20 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		88B026921CDDF1C6003DEB20 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		89DB9394E28EA5C873BA9430 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B7CC80C602BB267596A851A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88AEA9591CDA13AF00094C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727032703069635DF021732D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43A5370F82F1389B6FF449F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86EEB01348569ADF1B7629B4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88AEA9531CDA13AF00094C66 = {
+			isa = PBXGroup;
+			children = (
+				88AEA95E1CDA13AF00094C66 /* SureChat */,
+				88AEA95D1CDA13AF00094C66 /* Products */,
+				E1251790B5C51D494D9B22DA /* Pods */,
+				43A5370F82F1389B6FF449F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88AEA95D1CDA13AF00094C66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88AEA95C1CDA13AF00094C66 /* SureChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88AEA95E1CDA13AF00094C66 /* SureChat */ = {
+			isa = PBXGroup;
+			children = (
+				88B0268E1CDDF1C6003DEB20 /* Common */,
+				88B026851CDDF1B7003DEB20 /* User */,
+				88B026691CDDF131003DEB20 /* Message */,
+				88B0264C1CDDF12B003DEB20 /* Address */,
+				88B026431CDDF125003DEB20 /* Settings */,
+				88B0263C1CDDF11D003DEB20 /* Tools */,
+				88B0260B1CDDF0CB003DEB20 /* resource */,
+				88AEA9681CDA13AF00094C66 /* Main.storyboard */,
+				88AEA96B1CDA13AF00094C66 /* Assets.xcassets */,
+				88AEA96D1CDA13AF00094C66 /* LaunchScreen.storyboard */,
+				88AEA9701CDA13AF00094C66 /* Info.plist */,
+				88AEA95F1CDA13AF00094C66 /* Supporting Files */,
+				88AEA97C1CDA141300094C66 /* PrefixHeader.pch */,
+			);
+			path = SureChat;
+			sourceTree = "<group>";
+		};
+		88AEA95F1CDA13AF00094C66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88AEA9601CDA13AF00094C66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88B0260B1CDDF0CB003DEB20 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				8819CF901CFBD89C00326BA5 /* lauch.png */,
+				883285EB1CDF7A7A0064C914 /* AlbumShare~iphone.png */,
+				883285E91CDF7A4B0064C914 /* AlbumShareHL~iphone.png */,
+				883285D91CDF76A20064C914 /* c2cReceiverMsgNodeBG~iphone.png */,
+				883285DD1CDF76A20064C914 /* c2cSenderMsgNodeBG~iphone.png */,
+				883285D51CDF75EE0064C914 /* fts_groupnumber_icon~iphone.png */,
+				887D9A841CDF408B00F37C18 /* locationSharing_icon_Member~iphone.png */,
+				88B0260C1CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone.png */,
+				88B0260D1CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone@3x.png */,
+				88B0260F1CDDF0CB003DEB20 /* Fav_Search_Voice~iphone.png */,
+				88B026101CDDF0CB003DEB20 /* global_btn_bottom_friend_press~iphone.png */,
+				88B026111CDDF0CB003DEB20 /* global_btn_bottom_friend~iphone.png */,
+				88B026121CDDF0CB003DEB20 /* global_btn_bottom_message_press~iphone.png */,
+				88B026131CDDF0CB003DEB20 /* global_btn_bottom_message~iphone.png */,
+				88B026141CDDF0CB003DEB20 /* global_btn_bottom_my_press~iphone.png */,
+				88B026151CDDF0CB003DEB20 /* global_btn_bottom_my~iphone.png */,
+				88B026161CDDF0CB003DEB20 /* global_btn_bottom_play_press~iphone.png */,
+				88B026171CDDF0CB003DEB20 /* global_btn_bottom_play~iphone.png */,
+				88B026181CDDF0CB003DEB20 /* global_btn_bottom_story_press~iphone.png */,
+				88B026191CDDF0CB003DEB20 /* global_btn_bottom_story~iphone.png */,
+				88B0261A1CDDF0CB003DEB20 /* lacunimage.png */,
+				88B0261C1CDDF0CB003DEB20 /* plugins_FriendNotify~iphone.png */,
+				88B0261D1CDDF0CB003DEB20 /* plugins_FriendNotify~iphone@3x.png */,
+				88B0261E1CDDF0CB003DEB20 /* Private letter_List_1.png */,
+				88B0261F1CDDF0CB003DEB20 /* Private letter_List_1@2x.png */,
+				88B026201CDDF0CB003DEB20 /* Private letter_List_2.png */,
+				88B026211CDDF0CB003DEB20 /* Private letter_List_2@2x.png */,
+				88B026221CDDF0CB003DEB20 /* watch-tips-avatar2~iphone.png */,
+				88B026231CDDF0CB003DEB20 /* watch-tips-avatar~iphone.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		88B0263C1CDDF11D003DEB20 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				88B0263D1CDDF11D003DEB20 /* FactoryClass.h */,
+				88B0263E1CDDF11D003DEB20 /* FactoryClass.m */,
+				88B0263F1CDDF11D003DEB20 /* UIImage+GIF.h */,
+				88B026401CDDF11D003DEB20 /* UIImage+GIF.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		88B026431CDDF125003DEB20 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				88B026441CDDF125003DEB20 /* Controllers */,
+				88B026481CDDF125003DEB20 /* Model */,
+				88B026491CDDF125003DEB20 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		88B026441CDDF125003DEB20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B026451CDDF125003DEB20 /* SettingTableViewController.h */,
+				88B026461CDDF125003DEB20 /* SettingTableViewController.m */,
+				88B026471CDDF125003DEB20 /* SettingTableViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88B026481CDDF125003DEB20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88B026491CDDF125003DEB20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88B0264C1CDDF12B003DEB20 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				88B0264D1CDDF12B003DEB20 /* Controllers */,
+				88B0265A1CDDF12B003DEB20 /* Model */,
+				88B0265B1CDDF12B003DEB20 /* View */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		88B0264D1CDDF12B003DEB20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B026511CDDF12B003DEB20 /* AddressTableViewController.h */,
+				88B026521CDDF12B003DEB20 /* AddressTableViewController.m */,
+				88B026531CDDF12B003DEB20 /* AddressTableViewController.xib */,
+				88B0264E1CDDF12B003DEB20 /* AddFriendViewController.h */,
+				88B0264F1CDDF12B003DEB20 /* AddFriendViewController.m */,
+				88B026501CDDF12B003DEB20 /* AddFriendViewController.xib */,
+				88B026571CDDF12B003DEB20 /* NewFriendViewController.h */,
+				88B026581CDDF12B003DEB20 /* NewFriendViewController.m */,
+				88B026591CDDF12B003DEB20 /* NewFriendViewController.xib */,
+				88B026541CDDF12B003DEB20 /* CreateGroupViewController.h */,
+				88B026551CDDF12B003DEB20 /* CreateGroupViewController.m */,
+				88B026561CDDF12B003DEB20 /* CreateGroupViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88B0265A1CDDF12B003DEB20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88B0265B1CDDF12B003DEB20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88B0265C1CDDF12B003DEB20 /* AddressTableViewCell.h */,
+				88B0265D1CDDF12B003DEB20 /* AddressTableViewCell.m */,
+				88B0265E1CDDF12B003DEB20 /* AddressTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88B026691CDDF131003DEB20 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				88B0266A1CDDF131003DEB20 /* Controllers */,
+				88B026711CDDF131003DEB20 /* Model */,
+				88B026761CDDF131003DEB20 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		88B0266A1CDDF131003DEB20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B0266E1CDDF131003DEB20 /* MessageTableViewController.h */,
+				88B0266F1CDDF131003DEB20 /* MessageTableViewController.m */,
+				88B026701CDDF131003DEB20 /* MessageTableViewController.xib */,
+				88B0266B1CDDF131003DEB20 /* ChatViewController.h */,
+				88B0266C1CDDF131003DEB20 /* ChatViewController.m */,
+				88B0266D1CDDF131003DEB20 /* ChatViewController.xib */,
+				883285ED1CDF7B070064C914 /* GroupDetailTableViewController.h */,
+				883285EE1CDF7B070064C914 /* GroupDetailTableViewController.m */,
+				883285EF1CDF7B070064C914 /* GroupDetailTableViewController.xib */,
+				883285F51CE025AB0064C914 /* AddGroupMemberViewController.h */,
+				883285F61CE025AB0064C914 /* AddGroupMemberViewController.m */,
+				883285F71CE025AB0064C914 /* AddGroupMemberViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88B026711CDDF131003DEB20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88B026741CDDF131003DEB20 /* MessageModel.h */,
+				88B026751CDDF131003DEB20 /* MessageModel.m */,
+				88B026721CDDF131003DEB20 /* ChatModel.h */,
+				88B026731CDDF131003DEB20 /* ChatModel.m */,
+				883285F21CDF7F010064C914 /* GroupDetailModel.h */,
+				883285F31CDF7F010064C914 /* GroupDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88B026761CDDF131003DEB20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88B026791CDDF131003DEB20 /* MessageTableViewCell.h */,
+				88B0267A1CDDF131003DEB20 /* MessageTableViewCell.m */,
+				88B0267B1CDDF131003DEB20 /* MessageTableViewCell.xib */,
+				88B026771CDDF131003DEB20 /* ChatTableViewCell.h */,
+				88B026781CDDF131003DEB20 /* ChatTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88B026851CDDF1B7003DEB20 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				88B026861CDDF1B7003DEB20 /* Controllers */,
+				88B0268A1CDDF1B7003DEB20 /* Model */,
+				88B0268B1CDDF1B7003DEB20 /* View */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		88B026861CDDF1B7003DEB20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B026871CDDF1B7003DEB20 /* LoginViewController.h */,
+				88B026881CDDF1B7003DEB20 /* LoginViewController.m */,
+				88B026891CDDF1B7003DEB20 /* LoginViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88B0268A1CDDF1B7003DEB20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88B0268B1CDDF1B7003DEB20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88B0268E1CDDF1C6003DEB20 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				88B0268F1CDDF1C6003DEB20 /* AppDelegate.h */,
+				88B026901CDDF1C6003DEB20 /* AppDelegate.m */,
+				88B026911CDDF1C6003DEB20 /* MainViewController.h */,
+				88B026921CDDF1C6003DEB20 /* MainViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E1251790B5C51D494D9B22DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7CC80C602BB267596A851A6 /* Pods.debug.xcconfig */,
+				89DB9394E28EA5C873BA9430 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88AEA95B1CDA13AF00094C66 /* SureChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88AEA9731CDA13AF00094C66 /* Build configuration list for PBXNativeTarget "SureChat" */;
+			buildPhases = (
+				D5EC757B16E3D2140413D5C6 /* Check Pods Manifest.lock */,
+				88AEA9581CDA13AF00094C66 /* Sources */,
+				88AEA9591CDA13AF00094C66 /* Frameworks */,
+				88AEA95A1CDA13AF00094C66 /* Resources */,
+				6835A2EFDA57A67D1088785C /* Embed Pods Frameworks */,
+				DE954F4D0ECF7A3B6660CF30 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SureChat;
+			productName = SureChat;
+			productReference = 88AEA95C1CDA13AF00094C66 /* SureChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88AEA9541CDA13AF00094C66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "刘硕";
+				TargetAttributes = {
+					88AEA95B1CDA13AF00094C66 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7APVZSZRMY;
+					};
+				};
+			};
+			buildConfigurationList = 88AEA9571CDA13AF00094C66 /* Build configuration list for PBXProject "SureChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88AEA9531CDA13AF00094C66;
+			productRefGroup = 88AEA95D1CDA13AF00094C66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88AEA95B1CDA13AF00094C66 /* SureChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88AEA95A1CDA13AF00094C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883285F91CE025AB0064C914 /* AddGroupMemberViewController.xib in Resources */,
+				88B0262F1CDDF0CB003DEB20 /* global_btn_bottom_play~iphone.png in Resources */,
+				88B026361CDDF0CB003DEB20 /* Private letter_List_1.png in Resources */,
+				88B026251CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone@3x.png in Resources */,
+				88B026351CDDF0CB003DEB20 /* plugins_FriendNotify~iphone@3x.png in Resources */,
+				8819CF911CFBD89C00326BA5 /* lauch.png in Resources */,
+				88B026391CDDF0CB003DEB20 /* Private letter_List_2@2x.png in Resources */,
+				883285D61CDF75EE0064C914 /* fts_groupnumber_icon~iphone.png in Resources */,
+				88B026841CDDF131003DEB20 /* MessageTableViewCell.xib in Resources */,
+				883285F11CDF7B070064C914 /* GroupDetailTableViewController.xib in Resources */,
+				88B0262B1CDDF0CB003DEB20 /* global_btn_bottom_message~iphone.png in Resources */,
+				88B0264B1CDDF125003DEB20 /* SettingTableViewController.xib in Resources */,
+				88B026311CDDF0CB003DEB20 /* global_btn_bottom_story~iphone.png in Resources */,
+				88B0262E1CDDF0CB003DEB20 /* global_btn_bottom_play_press~iphone.png in Resources */,
+				88AEA96F1CDA13AF00094C66 /* LaunchScreen.storyboard in Resources */,
+				883285EC1CDF7A7A0064C914 /* AlbumShare~iphone.png in Resources */,
+				88B026341CDDF0CB003DEB20 /* plugins_FriendNotify~iphone.png in Resources */,
+				88B026381CDDF0CB003DEB20 /* Private letter_List_2.png in Resources */,
+				88B026641CDDF12B003DEB20 /* CreateGroupViewController.xib in Resources */,
+				88B026281CDDF0CB003DEB20 /* global_btn_bottom_friend_press~iphone.png in Resources */,
+				88AEA96C1CDA13AF00094C66 /* Assets.xcassets in Resources */,
+				88B026241CDDF0CB003DEB20 /* add_friend_icon_addgroup~iphone.png in Resources */,
+				88B0263A1CDDF0CB003DEB20 /* watch-tips-avatar2~iphone.png in Resources */,
+				88B026661CDDF12B003DEB20 /* NewFriendViewController.xib in Resources */,
+				88B0262D1CDDF0CB003DEB20 /* global_btn_bottom_my~iphone.png in Resources */,
+				88B0268D1CDDF1B7003DEB20 /* LoginViewController.xib in Resources */,
+				88B026291CDDF0CB003DEB20 /* global_btn_bottom_friend~iphone.png in Resources */,
+				88B0262C1CDDF0CB003DEB20 /* global_btn_bottom_my_press~iphone.png in Resources */,
+				88B0267F1CDDF131003DEB20 /* MessageTableViewController.xib in Resources */,
+				88B0267D1CDDF131003DEB20 /* ChatViewController.xib in Resources */,
+				887D9A851CDF408B00F37C18 /* locationSharing_icon_Member~iphone.png in Resources */,
+				88B026621CDDF12B003DEB20 /* AddressTableViewController.xib in Resources */,
+				883285EA1CDF7A4B0064C914 /* AlbumShareHL~iphone.png in Resources */,
+				88B026371CDDF0CB003DEB20 /* Private letter_List_1@2x.png in Resources */,
+				88AEA96A1CDA13AF00094C66 /* Main.storyboard in Resources */,
+				883285E51CDF76A20064C914 /* c2cSenderMsgNodeBG~iphone.png in Resources */,
+				88B026271CDDF0CB003DEB20 /* Fav_Search_Voice~iphone.png in Resources */,
+				883285E11CDF76A20064C914 /* c2cReceiverMsgNodeBG~iphone.png in Resources */,
+				88B026601CDDF12B003DEB20 /* AddFriendViewController.xib in Resources */,
+				88B026681CDDF12B003DEB20 /* AddressTableViewCell.xib in Resources */,
+				88B0263B1CDDF0CB003DEB20 /* watch-tips-avatar~iphone.png in Resources */,
+				88B026301CDDF0CB003DEB20 /* global_btn_bottom_story_press~iphone.png in Resources */,
+				88B0262A1CDDF0CB003DEB20 /* global_btn_bottom_message_press~iphone.png in Resources */,
+				88B026321CDDF0CB003DEB20 /* lacunimage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6835A2EFDA57A67D1088785C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EC757B16E3D2140413D5C6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE954F4D0ECF7A3B6660CF30 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88AEA9581CDA13AF00094C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B0267C1CDDF131003DEB20 /* ChatViewController.m in Sources */,
+				88B0267E1CDDF131003DEB20 /* MessageTableViewController.m in Sources */,
+				883285F41CDF7F010064C914 /* GroupDetailModel.m in Sources */,
+				88B026631CDDF12B003DEB20 /* CreateGroupViewController.m in Sources */,
+				883285F81CE025AB0064C914 /* AddGroupMemberViewController.m in Sources */,
+				88B026801CDDF131003DEB20 /* ChatModel.m in Sources */,
+				88B026941CDDF1C6003DEB20 /* MainViewController.m in Sources */,
+				88B026931CDDF1C6003DEB20 /* AppDelegate.m in Sources */,
+				88B026421CDDF11D003DEB20 /* UIImage+GIF.m in Sources */,
+				88B0264A1CDDF125003DEB20 /* SettingTableViewController.m in Sources */,
+				88B026821CDDF131003DEB20 /* ChatTableViewCell.m in Sources */,
+				88B0265F1CDDF12B003DEB20 /* AddFriendViewController.m in Sources */,
+				88B026671CDDF12B003DEB20 /* AddressTableViewCell.m in Sources */,
+				88B026831CDDF131003DEB20 /* MessageTableViewCell.m in Sources */,
+				883285F01CDF7B070064C914 /* GroupDetailTableViewController.m in Sources */,
+				88AEA9611CDA13AF00094C66 /* main.m in Sources */,
+				88B026651CDDF12B003DEB20 /* NewFriendViewController.m in Sources */,
+				88B0268C1CDDF1B7003DEB20 /* LoginViewController.m in Sources */,
+				88B026411CDDF11D003DEB20 /* FactoryClass.m in Sources */,
+				88B026611CDDF12B003DEB20 /* AddressTableViewController.m in Sources */,
+				88B026811CDDF131003DEB20 /* MessageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88AEA9681CDA13AF00094C66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88AEA9691CDA13AF00094C66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88AEA96D1CDA13AF00094C66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88AEA96E1CDA13AF00094C66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88AEA9711CDA13AF00094C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88AEA9721CDA13AF00094C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88AEA9741CDA13AF00094C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CC80C602BB267596A851A6 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SureChat/PrefixHeader.pch";
+				INFOPLIST_FILE = SureChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sure.baidu.wechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "242d1fa2-be8f-4120-91f7-cf7a916da7a1";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		88AEA9751CDA13AF00094C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89DB9394E28EA5C873BA9430 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fuyou Sun (7APVZSZRMY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fuyou Sun (7APVZSZRMY)";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SureChat/PrefixHeader.pch";
+				INFOPLIST_FILE = SureChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sure.baidu.wechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "242d1fa2-be8f-4120-91f7-cf7a916da7a1";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88AEA9571CDA13AF00094C66 /* Build configuration list for PBXProject "SureChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88AEA9711CDA13AF00094C66 /* Debug */,
+				88AEA9721CDA13AF00094C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88AEA9731CDA13AF00094C66 /* Build configuration list for PBXNativeTarget "SureChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88AEA9741CDA13AF00094C66 /* Debug */,
+				88AEA9751CDA13AF00094C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88AEA9541CDA13AF00094C66 /* Project object */;
+}

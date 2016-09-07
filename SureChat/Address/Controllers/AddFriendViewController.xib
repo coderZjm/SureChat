@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFriendViewController">
+            <connections>
+                <outlet property="addButton" destination="vSX-Le-s5C" id="WWX-wE-j7c"/>
+                <outlet property="textField" destination="jsB-fQ-Wxf" id="VKK-ut-9iq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="好友名称" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsB-fQ-Wxf">
+                    <rect key="frame" x="10" y="74" width="355" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7zt-zo-ZkB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSX-Le-s5C">
+                    <rect key="frame" x="0.0" y="124" width="374" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.59567352790000005" blue="0.3249420817" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="添加好友">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addFriendClick:" destination="-1" eventType="touchUpInside" id="Sp1-TR-1am"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jsB-fQ-Wxf" secondAttribute="trailing" constant="10" id="1ge-Cf-CHv"/>
+                <constraint firstItem="jsB-fQ-Wxf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AQ1-Ph-CHc"/>
+                <constraint firstItem="jsB-fQ-Wxf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="Ou4-Es-lqg"/>
+                <constraint firstItem="vSX-Le-s5C" firstAttribute="top" secondItem="jsB-fQ-Wxf" secondAttribute="bottom" constant="10" id="QPp-57-4qH"/>
+                <constraint firstItem="vSX-Le-s5C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="edA-SB-3Ri"/>
+                <constraint firstItem="jsB-fQ-Wxf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="nBN-Y8-3R3"/>
+                <constraint firstItem="vSX-Le-s5C" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zWf-FV-UFf"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="47Y-84-bJw" appends="YES" id="RFd-nO-WLP"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="47Y-84-bJw">
+            <connections>
+                <action selector="tap:" destination="-1" id="YYJ-jT-PgD"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

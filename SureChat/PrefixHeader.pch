@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  SureChat
+//
+//  Created by yangyang on 16/3/1.
+//  Copyright © 2016年 杨阳. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <EaseMob.h>
+#import <SVProgressHUD.h>
+#import "FactoryClass.h"
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SURE_ALERT(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show]
+#define UDS [NSUserDefaults standardUserDefaults]
+#define USER_NAME @"USER_NAME"  //账号信息
+#define NEW_FRIEND @"NEW_FRIEND"//新好友
+#define TIME_FLAG 1 			//时间阀值
+#define INPUT_FLAG @"input"     //透传消息关键字
+#define END_FLAG @"end_input"   //结束透传
+#endif /* PrefixHeader_pch */
